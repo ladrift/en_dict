@@ -12,7 +12,7 @@ def recommend(request):
     """Return a json response for recommending while typing.
     Test by:
     $ curl -H "Content-Type: application/json" \
-        -X POST -d '{"word": "ab"}' http://localhost:8000/recommend
+        -X POST -d '{"word": "ab"}' http://localhost:8000/api/recommend
     """
     content = yield from request.json()
 
@@ -38,7 +38,7 @@ def find(request):
     """Return a json response for finding a word.
     Test by:
     $ curl -H "Content-Type: application/json" \
-        -d '{"word": "dad"}' http://localhost:8000/find
+        -d '{"word": "dad"}' http://localhost:8000/api/find
     """
     content = yield from request.json()
 
