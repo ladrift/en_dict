@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """English dictionary implementation.
 
 Support add word item, add example sentences."""
